@@ -11,3 +11,31 @@
 body {
   font-family: var(--open-sans);
 }
+
+.contanier {
+  width: 100%;
+  max-width: 1192px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  display: flex;
+  align-items: center;
+		gap: 196px;
+}
+
+.logo {
+  display: block;
+  width: 176px;
+  height: 56px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav{
+	flex-grow: 1;
+	display: flex;
+	gap: 46px;
+}
