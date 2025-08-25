@@ -39,3 +39,8 @@ body {
 	display: flex;
 	gap: 46px;
 }
+
+.nav-link {
+	color: var(--dark);
+	text-decoration: none;
+}
