@@ -6,8 +6,12 @@
   --accent-dark: #f37335;
   --dark: #443737;
   --light: #fff;
+  --light-rgb: 255, 255, 255;
 }
 
+a {
+  text-decoration: none;
+}
 body {
   font-family: var(--open-sans);
 }
@@ -19,6 +23,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* header */
+
 .header {
   display: flex;
   align-items: center;
@@ -44,7 +51,6 @@ body {
 
 .nav-link {
   color: var(--dark);
-  text-decoration: none;
   font-weight: 600;
   font-size: 20px;
 }
@@ -68,9 +74,9 @@ body {
   align-self: center;
   gap: 10px;
   color: var(--accent-dark);
-  text-decoration: none;
   font-size: 15px;
   font-weight: 700;
+  position: relative;
 }
 
 .cart::before {
@@ -93,4 +99,40 @@ body {
   color: var(--light);
   background-color: var(--accent-dark);
   border-radius: 100%;
+  position: absolute;
+  left: 17px;
+  bottom: 0;
+}
+
+/* hero */
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding-top: 142px;
+  padding-bottom: 142px;
+}
+
+.breadcrumbs {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 16px;
+  list-style-type: none;
+  padding-left: 0;
+  color: rgba(var(--light-rgb), 0.5);
+}
+.breadcrumbs-link {
+  color: rgba(var(--light-rgb), 0.5);
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+.breadcrumbs-item:not(:last-child)::after {
+  content: "/";
+  position: absolute;
+  right: -12px;
 }
