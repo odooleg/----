@@ -22,7 +22,9 @@ body {
 .header {
   display: flex;
   align-items: center;
-		gap: 196px;
+  gap: 196px;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 
 .logo {
@@ -34,13 +36,27 @@ body {
   background-size: contain;
 }
 
-.nav{
-	flex-grow: 1;
-	display: flex;
-	gap: 46px;
+.nav {
+  flex-grow: 1;
+  display: flex;
+  gap: 46px;
 }
 
 .nav-link {
-	color: var(--dark);
-	text-decoration: none;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  border-radius: 1.5px;
+  margin-top: 1px;
+}
+
+.nav-link:hover::after {
+  background-color: var(--accent-light);
 }
