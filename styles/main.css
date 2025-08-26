@@ -64,6 +64,9 @@ body {
 }
 
 .cart {
+  display: flex;
+  align-self: center;
+  gap: 10px;
   color: var(--accent-dark);
   text-decoration: none;
   font-size: 15px;
@@ -78,4 +81,16 @@ body {
   background-image: url(../images/cart.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.cart-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  font-size: 10px;
+  color: var(--light);
+  background-color: var(--accent-dark);
+  border-radius: 100%;
 }
