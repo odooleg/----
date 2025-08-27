@@ -123,11 +123,16 @@ body {
   list-style-type: none;
   padding-left: 0;
   color: rgba(var(--light-rgb), 0.5);
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .breadcrumbs-link {
   color: rgba(var(--light-rgb), 0.5);
 }
-
+.breadcrumbs-link:hover {
+  color: var(--accent-light);
+}
 .breadcrumbs-item {
   position: relative;
 }
@@ -135,4 +140,20 @@ body {
   content: "/";
   position: absolute;
   right: -12px;
+}
+
+.hero-title {
+  color: var(--light);
+  font-family: var(--Nunito-sans);
+  font-size: 79px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.hero-decription {
+  max-width: 320px;
+  margin: 0 auto;
+  color: rgba(var(--light-rgb), 0.8);
+  font-size: 15px;
+  line-height: 160%;
 }
